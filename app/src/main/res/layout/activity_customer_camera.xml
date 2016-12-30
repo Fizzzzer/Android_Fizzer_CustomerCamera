@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_customer_camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.fizzer.doraemon.customercamera.CameraSurfaceView
+        android:id="@+id/CameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnTake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:text="拍照"/>
+
+        <Button
+            android:id="@+id/takeCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/takeOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <com.fizzer.doraemon.customercamera.CameraFrameView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>
